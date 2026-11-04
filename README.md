@@ -18,10 +18,6 @@ Apps that aren't in the official Umbrel App Store, packaged to install and updat
 
 ---
 
-> [!NOTE]
-> The main copy of this repository lives in a private Gitea on the maintainer's Umbrel.
-> It is synced here automatically, because Umbrel installs community apps from GitHub.
-
 ## Add the store to your Umbrel
 
 1. Open the **App Store** on your Umbrel.
