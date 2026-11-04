@@ -1,0 +1,45 @@
+manifestVersion: 1
+id: kshan-t3code
+category: developer
+name: T3 Code Nightly
+version: "1.0.0"
+tagline: Run Claude Code and other coding agents on your Umbrel from any browser
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-t3code/icon.svg?v=1.0.0
+description: >-
+  T3 Code is a web, desktop and mobile app for coding agents such as Claude Code,
+  Codex and OpenCode. This app runs the T3 Code server (nightly track) directly on
+  your Umbrel, as the umbrel user, so agents work just like they do in an Umbrel
+  terminal: same home folder, same tools, same Claude Code login.
+
+
+  Before you start, install Claude Code on the Umbrel and sign in once from a
+  terminal (`claude`). T3 Code finds it in ~/.local/bin.
+
+
+  Open the app from the dashboard: after the Umbrel login, your browser is paired
+  with T3 Code automatically and opens it on port 3773. To use the T3 Code desktop or
+  phone app, run `t3 pair` in an Umbrel terminal and scan the code.
+  T3 Code answers only on your local network and Tailscale.
+
+
+  The app downloads the newest nightly on every start and moves to newer
+  nightlies at 04:00. Nightly builds can break.
+
+
+  Warning: this app runs with full access to your Umbrel's files as the umbrel
+  user, because its agents need it. Anyone you pair can run commands on your
+  Umbrel. Only pair your own devices.
+developer: Ping Labs
+website: https://t3.codes
+dependencies: []
+repo: https://github.com/pingdotgg/t3code
+support: https://github.com/pingdotgg/t3code/issues
+port: 3770
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  First release: runs the T3 Code nightly server on the Umbrel host with your Claude Code login, pairs the browser automatically from the dashboard, and updates to new nightlies at 04:00.
+submitter: kshanxs
+submission: https://github.com/kshanxs/kshanxs-umbrel-store
