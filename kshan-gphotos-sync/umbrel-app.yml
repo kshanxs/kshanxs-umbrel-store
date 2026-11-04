@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.1.0"
+version: "1.1.2"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.1.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.1.2
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  New Folders page (Insights): photos, videos, size and how much is backed up for any folder, opened one level at a time, plus a Devices view with one row per phone (the folders phone backup apps make, such as Photos/iPhone; "Pixel" and "Pixel (2)" count as one device). Added per day: a chart of new photos and videos for the folder or device (7 days to a year), and a small trend line with the new count for each subfolder or device. Files are dated by when they arrived on the server, not the photo's own date. Overview folder names open the Folders page; Library can show any folder, however…
+  New Copy accounts page: copies everything one connected Google account owns to another, newest first, one file at a time. Items the other account already has are skipped. Each file is downloaded, checked to be Google's original, uploaded the free way, and its favourite, archive and caption come along; then the copy on the server is removed. Filter by photos, videos and years; pause, resume, stop and retry failed ones. Nothing is deleted in either account. Every 25 copies GP Sync checks with Google that they don't count against the other account's storage, and pauses if they do. Albums…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
