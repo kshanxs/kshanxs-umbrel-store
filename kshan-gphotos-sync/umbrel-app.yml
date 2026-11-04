@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.0.2"
+version: "1.0.3"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.2
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.3
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Settings menu: each section has a colored icon (like iOS Settings), the rows have a little space between them, and hovering lights up only the row under the pointer (the soft glow no longer spills over the rows next to it); the open section is marked with a blue edge. App & appearance, redone: pick the theme from three small pictures of the dashboard (System, Dark, Light) at the top; the change fades in across the page, and System shows whether the device is in dark or light mode right now. Install as an app: a clearer card with the steps for this device in one place. What works on this…
+  Health: the page no longer fails to load when a Google login file is named differently from the account inside it, and Remove now deletes such a login too. Health: if the page can't reach the app it says so instead of staying empty. Settings › App & appearance: the Install button appears as soon as the browser offers to install. Settings: an old or mistyped settings link opens Sync with Sync marked in the menu. App log download is named gp-sync-log-<date>.txt. Code: Python moved to backend/, the dashboard stays in web/ (files moved with git, history kept).
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
