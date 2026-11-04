@@ -10,7 +10,7 @@ Apps that aren't in the official Umbrel App Store, packaged to install and updat
 [![Check store](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/check.yml/badge.svg)](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/check.yml)
 [![Update apps](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/update-apps.yml/badge.svg)](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/update-apps.yml)
 ![Store](https://img.shields.io/badge/store-1.0.0-6d5dfc)
-![Apps](https://img.shields.io/badge/apps-4-6d5dfc)
+![Apps](https://img.shields.io/badge/apps-3-6d5dfc)
 ![umbrelOS](https://img.shields.io/badge/umbrelOS-1.x-5351FB)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -67,17 +67,6 @@ Apps that aren't in the official Umbrel App Store, packaged to install and updat
       Copies every photo and video in your Umbrel Photos and Videos folders to Google Photos,
       in original quality. Nothing on Umbrel is changed.<br>
       <sub>By kshanxs: <a href="https://github.com/kshanxs/gp-sync">kshanxs/gp-sync</a> · uploads with <a href="https://github.com/xob0t/google_photos_mobile_client">gpmc</a> by xob0t</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="80" align="center">
-      <img src="kshan-t3code/icon.svg" width="56" alt="T3 Code Nightly icon">
-    </td>
-    <td>
-      <b><a href="kshan-t3code">T3 Code Nightly</a></b> &nbsp; <img src="https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkshanxs%2Fkshanxs-umbrel-store%2Fmain%2Fkshan-t3code%2Fumbrel-app.yml&query=%24.version&label=version&color=6946b8" alt="version"><br>
-      Runs the T3 Code server (nightly) on your Umbrel, so you can drive Claude Code and other
-      coding agents from a browser, desktop or phone. Updates itself to new nightlies.<br>
-      <sub>Upstream: <a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a></sub>
     </td>
   </tr>
 </table>
