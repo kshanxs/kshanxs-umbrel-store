@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.0.0"
+version: "1.0.1"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.1
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  First release of GP Sync: Backs up the photos and videos in Umbrel's Photos and Videos folders to Google Photos in original quality, every 5 minutes; nothing on Umbrel is changed or deleted. Up to 5 Google accounts: back each folder up to one or several of them at once (the first is the main backup, the others get copies, tracked and retried per account). Folder choice, albums, duplicate finder, alerts (ntfy, Telegram). Dashboard inspired by iOS and Material 3: frosted-glass cards, pill buttons, tonal badges, system fonts, tuned dark and light themes, and charts with gentle depth…
+  Overview: Customize is now a small "Edit" link (next to the page subtitle on wider screens, above the cards on phones) instead of a big button on top of the page. Overview: the backup ring's glow no longer shows a cut-off square edge (light mode), and an empty ring no longer shows a dot. Upload on Android: "Take photo" and "Record video" are separate buttons, so the camera opens (one button asking for both opened nothing on Android); iPhone keeps one button. Upload: "Where files go" works smoothly on phones: choosing or adding a folder updates the card in place, the Add button no longer gets…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
