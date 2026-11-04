@@ -1,0 +1,43 @@
+manifestVersion: 1
+id: kshan-9router
+category: ai
+name: 9Router
+version: "0.5.112"
+tagline: Free AI router with automatic fallback across providers
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-9router/icon.svg
+description: >-
+  9Router is an OpenAI-compatible AI gateway. Connect your AI accounts and free
+  providers once, then point every app at one endpoint. When a provider hits a
+  limit, 9Router moves on to the next one automatically.
+
+
+  Highlights:
+
+
+  - One OpenAI-compatible endpoint for 40+ providers, including OpenRouter, Gemini,
+  Groq, NVIDIA NIM, Kiro and OpenCode Free
+
+  - Combos: ordered model lists with automatic fallback
+
+  - Usage and quota tracking per provider
+
+  - API keys for each app that uses it
+
+
+  Other apps on your Umbrel can reach it at http://kshan-9router_web_1:20128/v1
+  using an API key from the dashboard.
+developer: decolua
+website: https://9router.com
+dependencies: []
+repo: https://github.com/decolua/9router
+support: https://github.com/decolua/9router/issues
+port: 20128
+gallery:
+  - https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-9router/gallery/1.png
+path: "/dashboard"
+defaultUsername: ""
+deterministicPassword: true
+releaseNotes: >-
+  First release of 9Router on kshanx's App.
+submitter: kshanxs
+submission: https://github.com/kshanxs/kshanxs-umbrel-store

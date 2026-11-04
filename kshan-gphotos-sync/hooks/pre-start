@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Make sure the folders exist so Docker doesn't create them as root.
+APP_DIR="$(readlink -f "$(dirname "${BASH_SOURCE[0]}")/..")"
+UMBREL_HOME="$(readlink -f "${APP_DIR}/../../home")"
+mkdir -p "${APP_DIR}/data"
+for d in Photos Videos Photos/Uploads; do
+  if [[ ! -d "${UMBREL_HOME}/${d}" ]]; then
+    mkdir -p "${UMBREL_HOME}/${d}"
+    chown 1000:1000 "${UMBREL_HOME}/${d}"
+  fi
+done
+exit 0

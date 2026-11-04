@@ -1,0 +1,52 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kshan-cliproxyapi_web_1
+      APP_PORT: 8317
+      PROXY_AUTH_WHITELIST: "/v1/*,/v1beta/*"
+
+  web:
+    image: eceasy/cli-proxy-api:v8.0.53@sha256:19eae277664c18d980701cf1a283b11440f82efbac17e910a9120fdd5ac0e792
+    restart: on-failure
+    stop_grace_period: 30s
+    environment:
+      TZ: UTC
+      # Management key for the web panel. Umbrel shows it before opening the app.
+      MANAGEMENT_PASSWORD: $APP_PASSWORD
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -e
+        mkdir -p /data/auths /data/logs
+        if [ ! -f /data/config.yaml ]; then
+          KEY="sk-cpa-$$(head -c 24 /dev/urandom | od -An -tx1 | tr -d ' \n')"
+          cat > /data/config.yaml <<EOF
+        config-version: 8
+        auth-dir: "/data/auths"
+        server:
+          host: ""
+          port: 8317
+        management:
+          allow-remote: true
+          secret-key: ""
+        access:
+          api-keys:
+            - "$$KEY"
+        routing:
+          strategy: "round-robin"
+          session-affinity: true
+          session-affinity-ttl: "1h"
+          retry:
+            request-retry: 1
+            max-retry-interval: 30
+          cooldown:
+            disable-cooling: false
+            save-cooldown-status: true
+        EOF
+          echo "CLIProxyAPI: created /data/config.yaml"
+        fi
+        exec /CLIProxyAPI/CLIProxyAPI -config /data/config.yaml

@@ -1,0 +1,8 @@
+# Read by .github/scripts/update_apps.py to bring this app up to its newest release.
+image: kshanxs/gp-sync
+service: web
+releases: https://github.com/kshanxs/gp-sync/releases
+changelog: https://raw.githubusercontent.com/kshanxs/gp-sync/main/CHANGELOG.md
+replaces:
+  - ghcr.io/kshanxs/gphotos-sync
+  - ghcr.io/kshanxs/gp-sync

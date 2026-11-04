@@ -1,0 +1,4 @@
+# Read by .github/scripts/update_apps.py to bump this app when upstream releases.
+image: eceasy/cli-proxy-api
+service: web
+releases: https://github.com/router-for-me/CLIProxyAPI/releases

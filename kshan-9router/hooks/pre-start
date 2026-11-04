@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Create the data folder and a secrets file on first start.
+APP_DIR="$(readlink -f "$(dirname "${BASH_SOURCE[0]}")/..")"
+DATA="${APP_DIR}/data"
+mkdir -p "${DATA}/9router"
+chown 1000:1000 "${DATA}" "${DATA}/9router"
+
+ENV_FILE="${DATA}/app.env"
+if [[ ! -f "${ENV_FILE}" ]]; then
+  rnd() { head -c 32 /dev/urandom | od -An -tx1 | tr -d ' \n'; }
+  {
+    echo "JWT_SECRET=$(rnd)"
+    echo "API_KEY_SECRET=$(rnd)"
+  } > "${ENV_FILE}"
+  chmod 600 "${ENV_FILE}"
+  echo "9Router: created ${ENV_FILE}"
+fi
+exit 0

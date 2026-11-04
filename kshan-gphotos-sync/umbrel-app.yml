@@ -1,0 +1,41 @@
+manifestVersion: 1
+id: kshan-gphotos-sync
+category: files
+name: GP Sync
+version: "1.0.0"
+tagline: Copy every photo and video on your Umbrel to Google Photos
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.0
+description: >-
+  GP Sync watches the Photos and Videos folders in your Umbrel Files
+  app. Every few minutes it sends new photos and videos to your Google Photos
+  account in original quality. Files already in Google Photos are skipped, and
+  nothing on your Umbrel is ever changed or deleted.
+
+
+  The dashboard shows live progress, network speed, upload times, history and
+  insights, and works as a phone app: upload photos and videos from your phone
+  straight into Photos/Uploads on Umbrel, and they are backed up too.
+
+
+  Made by kshanxs (MIT license). Uploads use gpmc by xob0t, an unofficial Google Photos client. You need the auth_data of your
+  Google account once: install Google Photos ReVanced on an Android phone, run
+  `adb logcat | grep "auth%2Fphotos.native"` on a computer, sign in, and paste the
+  line starting with androidId= into the app.
+
+
+  This uses an unofficial API that Google could change or block at any time. Keep
+  your originals on Umbrel.
+developer: kshanxs
+website: https://github.com/kshanxs/gp-sync
+dependencies: []
+repo: https://github.com/kshanxs/gp-sync
+support: https://github.com/kshanxs/gp-sync/issues
+port: 8527
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  First release of GP Sync: Backs up the photos and videos in Umbrel's Photos and Videos folders to Google Photos in original quality, every 5 minutes; nothing on Umbrel is changed or deleted. Up to 5 Google accounts: back each folder up to one or several of them at once (the first is the main backup, the others get copies, tracked and retried per account). Folder choice, albums, duplicate finder, alerts (ntfy, Telegram). Dashboard inspired by iOS and Material 3: frosted-glass cards, pill buttons, tonal badges, system fonts, tuned dark and light themes, and charts with gentle depth…
+submitter: kshanxs
+submission: https://github.com/kshanxs/kshanxs-umbrel-store

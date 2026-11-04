@@ -1,0 +1,4 @@
+# Read by .github/scripts/update_apps.py to bump this app when upstream releases.
+image: decolua/9router
+service: web
+releases: https://github.com/decolua/9router/releases

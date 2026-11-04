@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kshan-9router_web_1
+      APP_PORT: 20128
+      PROXY_AUTH_WHITELIST: "/v1/*"
+
+  web:
+    image: decolua/9router:0.5.112@sha256:fab111d99b23bde6c8944ca22982603ab0b09e917a0b1e4ce42a24b05753bec9
+    restart: on-failure
+    stop_grace_period: 30s
+    env_file:
+      - path: ${APP_DATA_DIR}/data/app.env
+        required: false
+    environment:
+      DATA_DIR: /app/data
+      INITIAL_PASSWORD: $APP_PASSWORD
+      NODE_ENV: production
+      REQUIRE_API_KEY: "true"
+      BASE_URL: http://127.0.0.1:20128
+    volumes:
+      - ${APP_DATA_DIR}/data/9router:/app/data
