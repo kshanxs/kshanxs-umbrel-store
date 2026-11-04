@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.1.3"
+version: "1.1.4"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.1.3
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.1.4
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Folders redesigned: devices and folders come first, under one compact summary (the chart moved to the bottom, with its 7 d to 1 y switch). Each device shows thumbnails of its newest photos. Opening a device or folder shows its photos and videos right there, backed up or not, with In Google / Waiting / Failed badges, photo/video filter, sorting and endless scrolling. Before, folders opened Library, which only lists uploaded files, so many looked empty. Backup apps' 00..ff folders are no longer listed: the device's photos are shown instead. A device keeps its name in the path (Devices ›…
+  Folders and Devices only list and count the folders you back up; others (like Downloads) are named in a short note with a link to choose folders. Every Folders page shows a photos and videos grid, also the first one (newest first, from all backed-up folders). Library's folder menu only offers backed-up folders (others looked empty there).
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
