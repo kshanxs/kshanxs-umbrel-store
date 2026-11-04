@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.0.1"
+version: "1.0.2"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.1
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.0.2
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Overview: Customize is now a small "Edit" link (next to the page subtitle on wider screens, above the cards on phones) instead of a big button on top of the page. Overview: the backup ring's glow no longer shows a cut-off square edge (light mode), and an empty ring no longer shows a dot. Upload on Android: "Take photo" and "Record video" are separate buttons, so the camera opens (one button asking for both opened nothing on Android); iPhone keeps one button. Upload: "Where files go" works smoothly on phones: choosing or adding a folder updates the card in place, the Add button no longer gets…
+  Settings menu: each section has a colored icon (like iOS Settings), the rows have a little space between them, and hovering lights up only the row under the pointer (the soft glow no longer spills over the rows next to it); the open section is marked with a blue edge. App & appearance, redone: pick the theme from three small pictures of the dashboard (System, Dark, Light) at the top; the change fades in across the page, and System shows whether the device is in dark or light mode right now. Install as an app: a clearer card with the steps for this device in one place. What works on this…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
