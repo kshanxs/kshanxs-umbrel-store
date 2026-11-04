@@ -3,9 +3,9 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      # The pairing helper (pair.py) runs on the Umbrel host, on the Docker bridge
-      # address that the app proxy can reach. It is not reachable from the LAN.
-      APP_HOST: 10.21.0.1
+      # The pairing helper (pair.py) runs on the Umbrel host and listens on
+      # 127.0.0.1 only; Umbrel's app gateway also runs on the host.
+      APP_HOST: 127.0.0.1
       APP_PORT: 3772
 
   server:

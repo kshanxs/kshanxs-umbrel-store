@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-t3code
 category: developer
 name: T3 Code Nightly
-version: "1.0.0"
+version: "1.0.1"
 tagline: Run Claude Code and other coding agents on your Umbrel from any browser
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-t3code/icon.svg?v=1.0.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-t3code/icon.svg?v=1.0.1
 description: >-
   T3 Code is a web, desktop and mobile app for coding agents such as Claude Code,
   Codex and OpenCode. This app runs the T3 Code server (nightly track) directly on
@@ -40,6 +40,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  First release: runs the T3 Code nightly server on the Umbrel host with your Claude Code login, pairs the browser automatically from the dashboard, and updates to new nightlies at 04:00.
+  Fixes opening the app from the Umbrel dashboard on newer umbrelOS, where the app gateway runs on the host: the pairing helper now listens on 127.0.0.1.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store

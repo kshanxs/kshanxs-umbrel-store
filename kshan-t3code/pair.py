@@ -6,8 +6,8 @@ browser that is already paired with T3 Code goes straight to it. Any other
 browser gets a fresh one-time pairing link (valid for 2 minutes), so nobody has
 to copy tokens from a terminal. Open /pair to pair again on purpose.
 
-Listens only on the Docker bridge address the app proxy uses, and only answers
-requests coming from that network.
+Listens only on 127.0.0.1: Umbrel's app gateway runs on the host and checks
+the Umbrel login before it forwards anything here.
 """
 
 import ipaddress
@@ -18,11 +18,11 @@ import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlsplit
 
-BIND = os.environ.get("T3_PAIR_BIND", "10.21.0.1")
+BIND = os.environ.get("T3_PAIR_BIND", "127.0.0.1")
 PORT = int(os.environ.get("T3_PAIR_PORT", "3772"))
 T3_PORT = int(os.environ.get("T3_PORT", "3773"))
 T3 = os.path.join(os.environ["T3_VERSIONS"], "current", "t3")
-PROXY_NETWORK = ipaddress.ip_network(os.environ.get("T3_PAIR_NETWORK", "10.21.0.0/16"))
+PROXY_NETWORK = ipaddress.ip_network(os.environ.get("T3_PAIR_NETWORK", "127.0.0.0/8"))
 
 
 def t3_base(headers):
