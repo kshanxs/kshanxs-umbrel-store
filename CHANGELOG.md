@@ -1,9 +1,5 @@
 # Changelog
 
-## 1.1.0
-
-- Apps: added Vaultwarden 1.37.5, a self-hosted Bitwarden-compatible password manager
-
 ## 1.0.0
 
 First release of kshanx's App, a community app store for umbrelOS by kshanxs.

@@ -1,4 +1,0 @@
-# Read by .github/scripts/update_apps.py to bump this app when upstream releases.
-image: vaultwarden/server
-service: server
-releases: https://github.com/dani-garcia/vaultwarden/releases

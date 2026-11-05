@@ -9,8 +9,8 @@ Apps that aren't in the official Umbrel App Store, packaged to install and updat
 
 [![Check store](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/check.yml/badge.svg)](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/check.yml)
 [![Update apps](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/update-apps.yml/badge.svg)](https://github.com/kshanxs/kshanxs-umbrel-store/actions/workflows/update-apps.yml)
-![Store](https://img.shields.io/badge/store-1.1.0-6d5dfc)
-![Apps](https://img.shields.io/badge/apps-4-6d5dfc)
+![Store](https://img.shields.io/badge/store-1.0.0-6d5dfc)
+![Apps](https://img.shields.io/badge/apps-3-6d5dfc)
 ![umbrelOS](https://img.shields.io/badge/umbrelOS-1.x-5351FB)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -69,17 +69,6 @@ Apps that aren't in the official Umbrel App Store, packaged to install and updat
       <sub>By kshanxs: <a href="https://github.com/kshanxs/gp-sync">kshanxs/gp-sync</a> · uploads with <a href="https://github.com/xob0t/google_photos_mobile_client">gpmc</a> by xob0t</sub>
     </td>
   </tr>
-  <tr>
-    <td width="80" align="center">
-      <img src="kshan-vaultwarden/icon.svg" width="56" alt="Vaultwarden icon">
-    </td>
-    <td>
-      <b><a href="kshan-vaultwarden">Vaultwarden</a></b> &nbsp; <img src="https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkshanxs%2Fkshanxs-umbrel-store%2Fmain%2Fkshan-vaultwarden%2Fumbrel-app.yml&query=%24.version&label=version&color=0ea5e9" alt="version"><br>
-      Self-hosted password manager compatible with the Bitwarden apps and browser extensions.
-      Your encrypted vault stays on your Umbrel.<br>
-      <sub>Upstream: <a href="https://github.com/dani-garcia/vaultwarden">dani-garcia/vaultwarden</a> (unofficial, not affiliated with Bitwarden)</sub>
-    </td>
-  </tr>
 </table>
 
 ## Updates
@@ -120,7 +109,6 @@ kshanx's App is made and maintained by **[kshanxs](https://github.com/kshanxs)**
 | GP Sync | [kshanxs](https://github.com/kshanxs/gp-sync), using [gpmc](https://github.com/xob0t/google_photos_mobile_client) by xob0t | MIT |
 | 9Router | [decolua](https://github.com/decolua/9router) | see upstream |
 | CLIProxyAPI | [router-for-me](https://github.com/router-for-me/CLIProxyAPI) | see upstream |
-| Vaultwarden | [Daniel García](https://github.com/dani-garcia/vaultwarden) | AGPL-3.0 (upstream) |
 
 Each app belongs to its own authors and keeps its own license. Icons and screenshots in an app's
 folder come from that app's project. Packaging for Umbrel by kshanxs.
