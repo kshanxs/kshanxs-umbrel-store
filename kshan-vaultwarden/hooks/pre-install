@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Make sure the data folder exists and belongs to the container user (1000).
+APP_DIR="$(readlink -f "$(dirname "${BASH_SOURCE[0]}")/..")"
+mkdir -p "${APP_DIR}/data"
+chown 1000:1000 "${APP_DIR}/data"
+exit 0
