@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.1.5"
+version: "1.2.0"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.1.5
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.0
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Upload first: pick folders or devices whose photos go to Google before the rest (Upload first on a folder or device; reorder or remove them in the Upload order card on Folders). A change re-orders the files still waiting right away. Overview: "Where your photos are" card with pie charts per device (or folder) and photos vs videos, by files or size, with each device's backed-up share. Folders: the chart sits in the summary card at the top (it was below the endless photo grid); a phone's folder (Photos/iPhone) shows as a device everywhere and opens the device view. Copy accounts: every…
+  Uploads per day and the streak refresh as soon as new files upload (they waited up to two minutes on Overview); the History page now refreshes too (it only loaded once). The streak counts the same uploads as the heat map, and says "1 active day" (not "days"). Right dates for photos and videos with no date inside (Snapchat saves, screenshots, chat pictures): Google Photos dates those by the upload, which used to be the time the file was copied to the server. GP Sync now sends the best date it knows: one you pick, else the earliest identical copy on the server. Fix dates page: lists uploaded…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
