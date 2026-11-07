@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.2.2"
+version: "1.2.3"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.2
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.3
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Fix dates: recheck selected or all waiting items, with clearer status views and animated transitions. Show known before-fix dates and distinguish Google-verified dates from upload estimates; keep Google Photos links available when known. Older fixes may not have a recorded before-fix date. Overview: make device and folder switches responsive and preserve the selected view. Folders and devices: distinguish adding files from changing backup priority, and move priority controls below the folder statistics.
+  Sources: a new page shows where every photo and video came from (a camera, Snapchat, a screenshot, Instagram, TikTok, WhatsApp, Telegram, or "saved from an app"), with the evidence for each. Items saved from apps can go into an album per app, get a searchable caption, or be archived. Nothing changes in Google until you choose, and your own captions are never replaced. Snapchat saves get an estimated save date (shown with its margin), worked out from your own camera photos. New uploads use it; items already in Google change only when you accept it in Fix dates. Dates in file names (WhatsApp…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
