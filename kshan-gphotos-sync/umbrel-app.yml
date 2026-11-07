@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.2.0"
+version: "1.2.1"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.1
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Uploads per day and the streak refresh as soon as new files upload (they waited up to two minutes on Overview); the History page now refreshes too (it only loaded once). The streak counts the same uploads as the heat map, and says "1 active day" (not "days"). Right dates for photos and videos with no date inside (Snapchat saves, screenshots, chat pictures): Google Photos dates those by the upload, which used to be the time the file was copied to the server. GP Sync now sends the best date it knows: one you pick, else the earliest identical copy on the server. Fix dates page: lists uploaded…
+  Choose individual photos and videos to copy between accounts, or copy all matching items; duplicates are skipped. Album copying is unavailable with the connected Google login. Track daily photo and video arrivals and their backup status by folder or device; dates are estimated from filesystem timestamps. A refreshed dashboard brings layered glass, dimensional details, updated navigation and clearer overview metrics.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
