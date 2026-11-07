@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kshan-cliproxyapi
 category: ai
 name: CLIProxyAPI
-version: "8.0.56"
+version: "8.0.59"
 tagline: Use your AI subscriptions from every device through one home hub
 icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-cliproxyapi/icon.svg
 description: >-
@@ -29,6 +29,6 @@ path: "/management.html"
 defaultUsername: ""
 deterministicPassword: true
 releaseNotes: >-
-  Updated to 8.0.56. See what changed: https://github.com/router-for-me/CLIProxyAPI/releases
+  Updated to 8.0.59. See what changed: https://github.com/router-for-me/CLIProxyAPI/releases
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store

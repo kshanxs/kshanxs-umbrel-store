@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Choose individual photos and videos to copy between accounts, or copy all matching items; duplicates are skipped. Album copying is unavailable with the connected Google login. Track daily photo and video arrivals and their backup status by folder or device; dates are estimated from filesystem timestamps. A refreshed dashboard brings layered glass, dimensional details, updated navigation and clearer overview metrics.
+  Copy accounts: choose individual photos and videos or copy all items matching your filters. Duplicates are skipped; copying albums is not available with the connected Google login. Folders and devices: track daily photo and video arrivals and see which are waiting, backed up or failed. Arrival dates are estimates based on filesystem timestamps. Refreshed the dashboard with layered glass surfaces, dimensional details, updated navigation and clearer overview metrics in both light and dark themes. Made the weekly-summary scheduling test independent of the current date.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
