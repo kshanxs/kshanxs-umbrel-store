@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.5.0"
+version: "1.5.1"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.1
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Fixed: the repeated "Could not update album … 404" error. One item missing from Google (deleted, or moved to the Trash or Locked folder) made Google refuse a whole batch, so albums like Snapchat were never made. Items are now checked against the library first (a replaced item is found under its new key), and a refused batch is split so everything else still goes in. Downloads: when freeing storage, choose "Delete the downloaded copy after the upload". Turned off, the copies are kept on the server, per account, to save or delete on the new Downloads page. Diagnostics: one JSON file with…
+  Fixed: Free storage over-counted what uses your Google storage. A photo that is also in albums is stored once by Google but was listed once per album, so the total could read far higher than Google's own (for example 131 GB instead of 70 GB). Each item is now counted once, and "Free all" frees each one once. The login-line prompt is reworded so AI assistants that refuse account-token steps understand it is your own account on your own device, and docs/PROMPTS.md now has copy-paste commands to read the line yourself without an assistant.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
