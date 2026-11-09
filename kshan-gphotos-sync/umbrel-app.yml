@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.2.3"
+version: "1.3.0"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.2.3
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.3.0
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Sources: a new page shows where every photo and video came from (a camera, Snapchat, a screenshot, Instagram, TikTok, WhatsApp, Telegram, or "saved from an app"), with the evidence for each. Items saved from apps can go into an album per app, get a searchable caption, or be archived. Nothing changes in Google until you choose, and your own captions are never replaced. Snapchat saves get an estimated save date (shown with its margin), worked out from your own camera photos. New uploads use it; items already in Google change only when you accept it in Fix dates. Dates in file names (WhatsApp…
+  New look: warm paper and amber by day, ink-black and indigo by night, with clean solid cards in place of frosted glass. The accent follows the theme, like the light of the new switch. Light/dark switch in the header and in Settings: a glass knob lit along its edge, blue below at night and amber above by day, whose pixel moon rebuilds into a sun. Tap or drag it. The header shows only the page title; each page's one-line description sits above its content. Shorter, plainer text across Fix dates, Sources, Free storage, Copy, Settings, About and Upload. Phones: text that was cut off wraps to a…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
