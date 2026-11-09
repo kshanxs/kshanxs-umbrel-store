@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.4.0"
+version: "1.4.1"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.4.0
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.4.1
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Fix dates is automatic: GP Sync checks the file is unchanged, deletes Google's copy (Trash, then permanently) and uploads it again with the right date. No albums or manual steps. Free storage is automatic: items that count against your storage are downloaded, deleted in Google and uploaded again free, keeping the date Google showed (Snapchat saves included). Accounts work at the same time: Free storage, Fix dates and copies run in parallel per account and per copy pair. Overview lists everything running under "Also running". Every re-upload sends its original date to Google, and each job…
+  The light/dark switch changes the page at the knob's own speed: the new theme spreads from the knob as it slides, follows your finger when you drag, and shrinks back if you drag back. Dark mode is neutral graphite instead of violet, with a moon-blue accent that matches the switch. Your time zone is saved whenever the dashboard opens. It was only saved with the Schedule or Alerts settings, so dates from file names, schedule hours and daily stats could be off by hours. Free storage checks the downloaded copy again, byte for byte, right before deleting Google's copy, and downloads it again if…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
