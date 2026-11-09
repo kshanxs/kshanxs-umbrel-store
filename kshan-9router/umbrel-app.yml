@@ -2,7 +2,7 @@ manifestVersion: 1
 id: kshan-9router
 category: ai
 name: 9Router
-version: "0.5.112"
+version: "0.5.116"
 tagline: Free AI router with automatic fallback across providers
 icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-9router/icon.svg
 description: >-
@@ -38,6 +38,6 @@ path: "/dashboard"
 defaultUsername: ""
 deterministicPassword: true
 releaseNotes: >-
-  First release of 9Router on kshanx's App.
+  Updated to 0.5.116. See what changed: https://github.com/decolua/9router/releases
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
