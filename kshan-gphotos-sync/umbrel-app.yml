@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.5.3"
+version: "1.5.4"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.3
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.4
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Fixed: Free storage said "Didn't work: the download is not exactly Google's original" for some videos. Google serves a copy it changed slightly (same size, an edited date inside) and lists that copy's checksum next to the original's. A download is now accepted when it matches a checksum Google gives for that item, and is uploaded again with its own checksum. Items that failed this way are tried again once. Fixed: items freed or copied between accounts got "{}" as their caption in Google Photos (the library list shows "no caption" that way). It is never copied again, and the "{}" is cleared…
+  Uploads go several at a time: 3 files at once per account by default (Settings › Sync, Files at once, up to 8). The speed limit is shared between them, and Overview lists every file uploading. Pause works at once: pausing Free storage or Copy accounts stops downloads in progress (they wait in the queue, nothing changes in Google). An item already deleted in Google still finishes its upload, so nothing is lost. The Working now card says "Pausing" until then. Working now shows a moving progress bar and the percentage for every item; replacing in Google shows a sliding bar. Progress bars on the…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
