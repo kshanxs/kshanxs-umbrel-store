@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.5.19"
+version: "1.6.0"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.19
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.6.0
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Files at once: new **Dynamic** setting, the default (Settings › Sync, and Free storage › Options › Items at once). It starts at 4 per account, adds more while Google keeps up (up to 12) and caps the bytes moving at once at 256 MB, so small photos run many side by side and big videos a few. When Google asks to slow down (HTTP 429) everything in that account halves and waits a minute before growing again; the file goes back in the queue instead of stopping the round. A fixed number now goes up to 8. Used by uploads, Free storage, Copy accounts and Snapchat. Saved settings move to Dynamic once.…
+  Auto free storage:** a switch at the top of Free storage (also in Moving settings). On, what your phones' Google Photos app backs up (iPhone, Android, new Snapchat saves too) is freed as it arrives: every 15 minutes each account's library is brought up to date and new items that count against storage are queued, after waiting 10 minutes so the phone has finished. Items handled before are never queued again, and nothing is taken on while an account is paused or held. Free storage fixes, from the logs:**. A photo the phone backed up (counted, and only found "already in Google" by GP Sync) made…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
