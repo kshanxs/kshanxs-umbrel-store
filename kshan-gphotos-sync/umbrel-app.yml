@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.5.15"
+version: "1.5.16"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.15
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.16
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Snapchat: one slow download no longer holds everything back. Memories that only need the album are finished and added first, all of them, 100 per album call (it was 100 per round, waiting behind each download). Saving and deleting extra copies, and uploads, follow a few at a time. The page says what the slow item is doing ("downloading Google's extra copy before deleting it · 14 MB of 48 MB").
+  Snapchat: no download when the memory on this server is already the same picture. An extra copy in Google is downloaded before it is deleted only when the match is less certain; copies that are the same file, taken in the same second, or all but identical in look (the camera-roll saves that make up most duplicates) are deleted without one. Far less to download, and no copies of pictures the server already has.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store

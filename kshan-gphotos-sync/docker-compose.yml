@@ -10,7 +10,7 @@ services:
     # All code ships inside this image. The release workflow updates this line
     # (Umbrel updates only copy this file, umbrel-app.yml and hooks).
     # app-source: 3710b0051ce706d4
-    image: kshanxs/gp-sync:1.5.15@sha256:88ed7e5958d32b76813b94b6a7f3e040a6b54335d220b4929140679ca5d601ef
+    image: kshanxs/gp-sync:1.5.16@sha256:bb44c18e5354ba05ff28b9df24c378591ad281045ea258d67cd4b1dcb7ad54ea
     restart: on-failure
     stop_grace_period: 20s
     environment:
