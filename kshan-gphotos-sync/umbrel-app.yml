@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.5.9"
+version: "1.5.10"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.9
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.5.10
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Pause and Refresh moved from the header into each page: a control strip under the title says what the page's job is doing, with one Pause/Resume and one Refresh. Overview pauses or resumes everything and scans; Sync pauses uploads and scans; Free storage, Copy accounts and Fix dates pause their own job and read the library from Google. No more repeated Resume buttons: the paused banners and the Pause buttons inside cards are gone. Each job has its own pause again. Overview's Pause everything switches every job's pause on, and Resume switches them all off, so nothing is held back by a…
+  Free storage, Working now: each item stays listed from download to Google's check ("Checking with Google") and leaves once it is freed, so one file can be followed step by step, as in 1.5.6. New items still start without waiting for the check, so freeing is as fast as before. Numbers that agree: Overview's strip and Running now count the same work; Library says how many files are still to back up, matching the count in the menu; Sync's ring is the share of files, with the share of space beside it; Copy accounts says what the other account had at the last read and how many GP Sync copied…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
