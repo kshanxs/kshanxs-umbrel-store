@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.7.1"
+version: "1.7.2"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.7.1
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.7.2
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Uploads card counts every upload:** Free storage, Copies and Snapchat uploads now count next to the backup's, so the card no longer says 0 while other work uploads. A coloured chip shows each kind that sent files today, and the badge says Running whenever any upload work is going on. Tap Uploads for details:** a sheet, like Moving now's, lists each kind's uploads today, their size, a 14-day trend, how many are uploading right now and a link to its page. Pages open at once:** every page shows its last answer straight away and refreshes it in the background; anything you change clears it. Free…
+  Yours in Google Photos:** a card on Free storage shows how much of your data Google holds (each file once, at full size), how much of it is stored free, and photos and videos apart. Using storage matches Google One:** every copy of a file counts (Google charges each one), and so does Google's Trash until it is emptied. Freeing a file frees all its copies. Freed originals no longer stay in Google's Trash:** a delete Google missed left some there, still counted. GP Sync deletes once more right after, and empties the ones left behind. No more "Google hasn't deleted it yet" loop:** GP Sync's own…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
