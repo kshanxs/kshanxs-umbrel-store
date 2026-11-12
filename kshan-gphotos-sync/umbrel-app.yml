@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.7.4"
+version: "1.7.5"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.7.4
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.7.5
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Fix dates learns from your own files:** an undated file copied together with dated ones takes the same shift from its real date as they did, and one in a numbered run (IMG_0101 between IMG_0100 and IMG_0104) takes a date between its neighbours'. Used only when the files around it agree, and the page says why ("like 4 dated files copied with it"). Tried on a real library, it was right within an hour for 99.6% of dated files, against 67% for the file's own time. Fix dates uses every Snapchat memory a file is a copy of:** also copies Google keeps, the very same bytes, and near-identical…
+  Security: other websites can no longer change GP Sync.** Without a password, a page on any site you visited could send a hidden form to GP Sync and add its own Google account, point your folders at it, or remove yours. Changes are now accepted only from GP Sync's own dashboard (and from scripts like curl); a request a browser marks as coming from another site gets 403. Security: no reading through a borrowed web address.** Without a password, a website could point its own name at your server (DNS rebinding) and read your photos and settings through it. GP Sync now answers only home-network…
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
