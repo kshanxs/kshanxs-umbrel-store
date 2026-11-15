@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.8.5"
+version: "1.8.6"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.8.5
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.8.6
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Overview's Jobs card keeps to the main jobs (Date fixes has its own page). Each job's state is a coloured dot and word ("Paused · 12 waiting") instead of a badge, and Pause / Resume is a light outlined button with its word. Sync's account cards show their state and Pause / Resume the same way.
+  Sync's cards line up on wide screens. The account cards stay the same height whichever account is busy: the files sending now are one list under the cards, each saying which account it goes to. Folders and Upload times and sizes are the same height side by side, with an All folders total at the bottom of the folder list.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
