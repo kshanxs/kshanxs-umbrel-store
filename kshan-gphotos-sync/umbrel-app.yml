@@ -2,9 +2,9 @@ manifestVersion: 1
 id: kshan-gphotos-sync
 category: files
 name: GP Sync
-version: "1.8.2"
+version: "1.8.3"
 tagline: Copy every photo and video on your Umbrel to Google Photos
-icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.8.2
+icon: https://cdn.jsdelivr.net/gh/kshanxs/kshanxs-umbrel-store@main/kshan-gphotos-sync/icon.svg?v=1.8.3
 description: >-
   GP Sync watches the Photos and Videos folders in your Umbrel Files
   app. Every few minutes it sends new photos and videos to your Google Photos
@@ -36,6 +36,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Check first, then sync: add an account to a folder that's already backed up and GP Sync compares the folder with that account's Google library (by checksum, no uploads), marks what it already has as Already in Google, and shows what's new, its size and the time it'd take. Nothing is sent until you press Start syncing. Choose accounts where you look: a Sends to row on each folder in Folders, Change on each account's card in Sync, and the folder picker opens right after connecting an account.
+  Faster checks: a check reads several files at once and saves in batches, and each account's Google library is read once for all its folders, with accounts checked side by side. Folders, redone for phones and polished: one big "% in Google" figure leads, Waiting, Failed and Last added share one card, no repeated counts, times under photos no longer cut off, and tidier Folders inside rows. The theme switch no longer glows.
 submitter: kshanxs
 submission: https://github.com/kshanxs/kshanxs-umbrel-store
