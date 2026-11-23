@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_WHITELIST: "/v1/*"
 
   web:
-    image: decolua/9router:0.5.119@sha256:38e58865ff111599f409f44430084ad0016c2ba530757ef545848d4bbe0cf007
+    image: decolua/9router:0.5.123@sha256:b5f68a9d0f89a805f574b32ed00103a7f205ae0ddaa4e508ad6440e58a9bd07b
     restart: on-failure
     stop_grace_period: 30s
     env_file:
